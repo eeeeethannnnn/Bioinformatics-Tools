@@ -1,5 +1,5 @@
 # read matrix
-with open('correlation_20191121.txt', 'r') as readDB:
+with open('correlationMatrix.txt', 'r') as readDB:
     read = readDB.read()
 contentDB = read.split('\n')
 matrixLen = len(contentDB)
@@ -20,7 +20,7 @@ contentTarget = read.split('\n')
 #        for j in range(len(matrixDB[i])):
 #            print(matrixDB[i][j])
 
-with open('ppi6.txt', 'w+') as ppiWrite:
+with open('ppi.txt', 'w+') as ppiWrite: #ppi stands for protein-protein interaction
     for i in range(1, len(matrixDB)):
         if matrixDB[i][0] in contentTarget:
             for j in range(1, len(matrixDB[i])):
