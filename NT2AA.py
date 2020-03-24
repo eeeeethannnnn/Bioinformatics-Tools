@@ -1,5 +1,4 @@
 from Bio.Seq import Seq
-from Bio.Alphabet import generic_dna
 
 inputfile ="test.fasta"
 f = open(inputfile, "r")
@@ -31,8 +30,8 @@ for key, value in aminoAcidSeq.items():
     f.write(value)
     f.write('\n')
 f.close()
-"""
 
+"""
 for key, value in aminoAcidSeq.items():
     print(key, value)
 """
